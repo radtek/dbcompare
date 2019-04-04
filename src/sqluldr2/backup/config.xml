@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataSync> 
+  <status> 
+    <lastSyncTime>2018-05-17 09:53:00</lastSyncTime>  
+    <lastKeepTime>10.125</lastKeepTime>  
+    <successTime>35</successTime>  
+    <failTime>197</failTime> 
+  </status>  
+  <!-- 数据库设置 -->  
+  <database> 
+    <databaseType>Oracle</databaseType>  
+    <databaseType>SQL Server</databaseType>  
+    <databaseType>MySQL</databaseType>  
+    <from> 
+      <className>oracle.jdbc.driver.OracleDriver</className>  
+      <dir>F:/ftp_data/benefit_path/</dir>  
+      <type>Oracle</type>  
+      <host>119.29.95.24</host>  
+      <port>1521</port>  
+      <name>ggtest</name>  
+      <schema>SPXMAS</schema>  
+      <user>754e59e9652cd727</user>  
+      <password>80654e870cf74e9b881fdf7d77010670</password>  
+      <!-- 导出配置 -->  
+      <sqluldr> 
+        <!-- 敏感信息是否密文  0：明文、1：密文  -->  
+        <isCipher>0</isCipher>  
+        <tableNames>cms_app,cms_merchant,cms_channel</tableNames>  
+        <separate>,!#</separate>  
+        <record>0x0a</record>  
+        <!-- 分页参数 -->  
+        <rows>100000</rows>  
+        <batch>yes</batch>  
+        <!-- 性能优化参数 -->  
+        <safe>yes</safe>  
+        <head>yes</head>  
+        <charset>UTF8</charset>  
+        <array>100</array>  
+        <read>218</read>  
+        <serial>0</serial>  
+        <!-- 导出使用的线程数，默认为1 -->  
+        <execNum>10</execNum> 
+      </sqluldr> 
+    </from>  
+    <to> 
+      <className>oracle.jdbc.driver.OracleDriver</className>  
+      <dir>F:\ftp_data\benefit_path\ALL_BASE_DATA_20180528141956622.zip</dir>  
+      <type>Oracle</type>  
+      <host>127.0.0.1</host>  
+      <port>1521</port>  
+      <name>ORCL</name>  
+      <schema>SPXMAS</schema>  
+      <user>7debdd8ec4faa3ca</user>  
+      <password>24cd4abf161a54b1</password>  
+      <!-- 导入配置 -->  
+      <sqlldr> 
+        <!-- 敏感信息是否密文  0：明文、1：密文 -->  
+        <isCipher>0</isCipher>  
+        <tableNames>cms_app,cms_merchant,cms_channel</tableNames>  
+        <separate>,!#</separate>  
+        <record>0x0a</record>  
+        <!-- 跳过第一行 -->  
+        <skip>1</skip>  
+        <!--性能优化参数 -->  
+        <readsize>21971520</readsize>  
+        <streamsize>21971520</streamsize>  
+        <date_cache>21971520</date_cache>  
+        <columnarrayrows>760000</columnarrayrows>  
+        <bindsize>5000</bindsize>  
+        <direct>Y</direct>  
+        <!-- #默认FALSE，注意：parallel并不是让一个sqlldr语句起多个进程来加载数据,而是不锁住加载表 #允许别的直接路径加载. 所以要使parallel起作用,应该先将要加载的数据文件分成多个,用多个sqlldr语句同时加载-->  
+        <parallel>TRUE</parallel>  
+        <!-- #导入使用的线程数，默认为1，如果是多线程，请配合parallel一起使用 -->  
+        <execNum>5</execNum> 
+      </sqlldr> 
+    </to> 
+  </database>  
+  <!-- 定时任务设置 -->  
+  <schedule> 
+    <radio>false,false,true,false,false,false,false</radio>  
+    <fixtime>23:45:00</fixtime> 
+  </schedule>  
+  <!-- 设置 -->  
+  <setting> 
+    <autoBak>false</autoBak>  
+    <debugMode>true</debugMode>  
+    <strictMode>true</strictMode>  
+    <mysqlPath>D:\MySQL</mysqlPath>  
+    <productname>产品A,产品B</productname> 
+  </setting>  
+  <increase> 
+    <POSITION_CODE>0</POSITION_CODE> 
+  </increase> 
+</dataSync>

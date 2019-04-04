@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sqlldrConfig>
+    <bindsize>5000</bindsize>
+    <check>false</check>
+    <columnarrayrows>760000</columnarrayrows>
+    <dateCache>21971520</dateCache>
+    <direct>Y</direct>
+    <execNum>20</execNum>
+    <parallel>true</parallel>
+    <readsize>21971520</readsize>
+    <record>0x0a</record>
+    <separate>,!#</separate>
+    <skip>1</skip>
+    <skipIndexMaintenance>true</skipIndexMaintenance>
+    <streamsize>21971520</streamsize>
+    <tableNames>
+        <tableName>cms_channel</tableName>
+    </tableNames>
+    <config>
+        <className>oracle.jdbc.driver.OracleDriver</className>
+        <dir>C:/Users/admin/Documents/Tencent Files/</dir>
+        <host>123.207.118.153</host>
+        <isCipher>0</isCipher>
+        <name>ntest</name>
+        <password>zhouyunfeng</password>
+        <port>1521</port>
+        <schema>zhouyunfeng</schema>
+        <type>Oracle</type>
+        <user>zhouyunfeng</user>
+    </config>
+</sqlldrConfig>

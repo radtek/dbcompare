@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sqluldrConfig>
+    <array>100</array>
+    <batch>yes</batch>
+    <charset>UTF8</charset>
+    <execNum>20</execNum>
+    <head>yes</head>
+    <read>218</read>
+    <record>0x0a</record>
+    <rows>100000</rows>
+    <safe>yes</safe>
+    <separate>,!#</separate>
+    <serial>0</serial>
+    <tableNames>
+        <tableName>cms_channel</tableName>
+        <tableName>cms_app</tableName>
+    </tableNames>
+    <config>
+        <className>oracle.jdbc.driver.OracleDriver</className>
+        <dir>F:/ftp_data/benefit_path/</dir>
+        <host>119.29.113.225</host>
+        <isCipher>0</isCipher>
+        <name>ndev</name>
+        <password>bsbank</password>
+        <port>1521</port>
+        <schema>bsbank</schema>
+        <type>Oracle</type>
+        <user>bsbank</user>
+    </config>
+</sqluldrConfig>

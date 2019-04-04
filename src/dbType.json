@@ -1,0 +1,9 @@
+[
+{"type":"0","url":"123.207.118.153:1521:ntest","userName":"","pwd":"","mold":"0","name":"测试库"},
+{"type":"6","url":"123.207.88.156:1521:test2","userName":"","pwd":"","mold":"6","name":"测试库2"},
+{"type":"1","url":"119.29.95.24:1525:pcloud","userName":"dbview","pwd":"f7Jfee4sj4","mold":"1","name":"专属库1"},
+{"type":"2","url":"119.29.95.24:1523:pcloud2","userName":"dbview","pwd":"gf7Jfee4sjU","mold":"2","name":"专属库2"},
+{"type":"3","url":"119.29.236.118:1521:czbank","userName":"chaxun","pwd":"SwiftaB2016","mold":"3","name":"网络库"},
+{"type":"4","url":"139.199.250.66:1521:bank","userName":"lisheng0504","pwd":"jgklfw88dqwQ","mold":"4","name":"金融云"},
+{"type":"5","url":"47.91.200.35:1525:hwcloud","userName":"dataview","pwd":"swiftpass999","mold":"5","name":"海外云"}
+]

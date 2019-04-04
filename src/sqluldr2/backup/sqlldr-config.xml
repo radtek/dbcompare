@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sqlldrConfig>
+    <!-- 是否校验数据文件 -->
+    <check>true</check>
+    <!-- 处理执行线程数 -->
+    <execNum>20</execNum>
+    <!-- 提过首行 -->
+    <skip>1</skip>
+    <record>0x0a</record>
+    <!-- 数据分割符 -->
+    <separate>,!#</separate>
+    <!-- 直通车模式 -->
+    <direct>Y</direct>
+    <!-- 是否开并行处理 -->
+    <parallel>true</parallel>
+    <!-- 约束型索引变为不可用 -->
+    <skipIndexMaintenance>true</skipIndexMaintenance>
+    
+    <!-- 可选优化参数 start-->
+    <bindsize>5000</bindsize>
+    <readsize>21971520</readsize>
+	<streamsize>21971520</streamsize>
+	<dateCache>21971520</dateCache>
+	<columnarrayrows>760000</columnarrayrows>
+	<!-- 可选优化参数 end-->
+	
+    <tableNames>
+        <tableName>cms_channel</tableName>
+    </tableNames>
+    <config>
+        <className>oracle.jdbc.driver.OracleDriver</className>
+        <dir>C:/Users/admin/Documents/Tencent Files/</dir>
+        <isCipher>0</isCipher>
+        <type>Oracle</type>
+        <host>123.207.118.153</host>
+        <port>1521</port>
+        <name>ntest</name>
+        <schema>zhouyunfeng</schema>
+        <user>zhouyunfeng</user>
+        <password>zhouyunfeng</password>
+    </config>
+</sqlldrConfig>
